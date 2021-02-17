@@ -1,0 +1,41 @@
+.box-subscribe {
+  background: var(--color-primary);
+  color: #fff;
+  padding-top: 2.6rem;
+}
+
+.box-subscribe h1 {
+  color: #fff;
+  padding-bottom: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subscribe-price {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.subscribe-cycle {
+  font-weight: 200;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  opacity: 0.75;
+}
+
+.subscribe-description {
+  display: block;
+  font-weight: 200;
+  padding-top: 0.5rem;
+  padding-bottom: 2.6rem;
+}
+
+@media screen and (min-width: 788px) {
+  .subscribe-description {
+    padding-bottom: 3.2rem;
+  }
+
+  .box-subscribe {
+    padding-top: 4rem;
+  }
+}

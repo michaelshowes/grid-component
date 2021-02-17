@@ -1,0 +1,21 @@
+.box-why {
+  background: hsl(179, 62%, 46%);
+  color: #fff;
+  padding-top: 2.6rem;
+}
+
+.box-why h1 {
+  padding-bottom: 2rem;
+}
+
+.box-why li {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 788px) {
+  .box-why {
+    padding-top: 4rem;
+  }
+}

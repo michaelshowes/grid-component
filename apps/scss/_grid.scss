@@ -1,0 +1,32 @@
+.grid {
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 266px 226px 226px;
+  grid-template-columns: repeat(1, auto);
+  grid-template-areas:
+    "join"
+    "subscribe"
+    "why";
+}
+
+@media screen and (min-width: 788px) {
+  .grid {
+    border-radius: 8px;
+    max-width: 636px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 230px 276px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      "join join"
+      "subscribe why";
+  }
+
+  .box-join {
+    grid-area: join;
+  }
+}

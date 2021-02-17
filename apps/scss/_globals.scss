@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #2ab2af;
+  --color-secondary: #c0df34;
+  --color-neutral-1: #e5eff5;
+  --color-neutral-2: #98a6bd;
+}
+
+html {
+  font-size: 62.5%;
+  background: #e5eff5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}

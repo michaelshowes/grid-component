@@ -1,0 +1,242 @@
+:root {
+  --color-primary: #2ab2af;
+  --color-secondary: #c0df34;
+  --color-neutral-1: #e5eff5;
+  --color-neutral-2: #98a6bd;
+}
+
+html {
+  font-size: 62.5%;
+  background: #e5eff5;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.grid {
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 266px 226px 226px;
+      grid-template-rows: 266px 226px 226px;
+  -ms-grid-columns: (auto)[1];
+      grid-template-columns: repeat(1, auto);
+      grid-template-areas: "join" "subscribe" "why";
+}
+
+@media screen and (min-width: 788px) {
+  .grid {
+    border-radius: 8px;
+    max-width: 636px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 230px 276px;
+        grid-template-rows: 230px 276px;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: "join join" "subscribe why";
+  }
+  .box-join {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: join;
+  }
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-join {
+  background: #fff;
+  padding-top: 4rem;
+}
+
+.box-join p {
+  color: var(--color-neutral-2);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.box-join h1 {
+  color: var(--color-primary);
+  padding-bottom: 2.6rem;
+  font-size: 2rem;
+}
+
+.box-join span {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.join-header {
+  padding-bottom: 2.2rem;
+}
+
+@media screen and (min-width: 788px) {
+  .box-join {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: join;
+  }
+  .box-join h1 {
+    font-size: 2.6rem;
+  }
+  .box-join span {
+    font-size: 1.9rem;
+  }
+  .box-join p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .join-header {
+    padding-bottom: 2rem;
+  }
+}
+
+.box-subscribe {
+  background: var(--color-primary);
+  color: #fff;
+  padding-top: 2.6rem;
+}
+
+.box-subscribe h1 {
+  color: #fff;
+  padding-bottom: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subscribe-price {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.subscribe-cycle {
+  font-weight: 200;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  opacity: 0.75;
+}
+
+.subscribe-description {
+  display: block;
+  font-weight: 200;
+  padding-top: 0.5rem;
+  padding-bottom: 2.6rem;
+}
+
+@media screen and (min-width: 788px) {
+  .subscribe-description {
+    padding-bottom: 3.2rem;
+  }
+  .box-subscribe {
+    padding-top: 4rem;
+  }
+}
+
+.box-why {
+  background: #2dbebc;
+  color: #fff;
+  padding-top: 2.6rem;
+}
+
+.box-why h1 {
+  padding-bottom: 2rem;
+}
+
+.box-why li {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 788px) {
+  .box-why {
+    padding-top: 4rem;
+  }
+}
+
+.box {
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+
+@media screen and (min-width: 788px) {
+  .box {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "karla";
+  background: var(--color-secondary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.6rem 5rem;
+  -webkit-box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background: #c9ed26;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
